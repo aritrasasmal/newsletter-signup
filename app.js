@@ -17,7 +17,7 @@ mailchimp.setConfig({
 //   }
   
 // callPing();
-const listId = "04ba86ee3bx";
+const listId = "04ba86ee3b";
 // const subscribingUser = {
 //   firstName: "Prudence",
 //   lastName: "McVankab",
