@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const axios = require("axios");
 const mailchimp = require("@mailchimp/mailchimp_marketing");
@@ -7,8 +8,8 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 mailchimp.setConfig({
-    apiKey: '9f4d3d55e8e4f7af54cbe8ca69206efb-us17',
-    server: 'us17',
+    apiKey: process.env.API_KEY,
+    server: process.env.SERVER,
   });
   
 //   async function callPing() {
